@@ -11,6 +11,7 @@ import usersRoutes from "./routes/users";
 import defectsRoutes from "./routes/defects";
 import auditRoutes from "./routes/audit";
 import shiftsRoutes from "./routes/shifts";
+import modulesRoutes from "./routes/modules";
 
 // Cargar variables de entorno
 dotenv.config();
@@ -45,6 +46,7 @@ app.use("/api/users", usersRoutes);
 app.use("/api/defects", defectsRoutes);
 app.use("/api/audit", auditRoutes);
 app.use("/api/shifts", shiftsRoutes);
+app.use("/api/modules", modulesRoutes);
 
 // Ruta 404
 app.use((_req: Request, res: Response) => {
